@@ -56,12 +56,14 @@ The database models the operation of a pharmacy: drug inventory, supplier delive
 | `total_revenue(start, end)` | Calculates total revenue for a date range |
 
 ## SQL Files
+```
 sql/
 ├── 01_schema.sql      — table definitions
 ├── 02_data.sql        — sample data
 ├── 03_procedures.sql  — stored procedures
 ├── 04_triggers.sql    — triggers
 └── 05_queries.sql     — example queries
+```
 
 ## Getting Started
 
