@@ -100,6 +100,7 @@ CREATE TABLE IF NOT EXISTS Sales_pharmaceuticals (
   id_preparation INT(5) NOT NULL,
   id_employee INT(5) NOT NULL,
   quantity_pharmaceuticals INT(5) NOT NULL,
+  prescription_availability TINYINT(1) DEFAULT '0',
   PRIMARY KEY (id_sales, id_preparation),
   CONSTRAINT fk_sales_prep FOREIGN KEY (id_sales)
     REFERENCES Sales(id_sales)
